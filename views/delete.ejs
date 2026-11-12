@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete User</title>
+</head>
+
+<body>
+
+    <h2>Delete User</h2>
+
+    <form method="POST" action="/user/<%= id %>?_method=DELETE">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            required
+        >
+
+        <br><br>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+        >
+
+        <br><br>
+
+        <button>Confirm Delete</button>
+
+    </form>
+
+</body>
+</html>
